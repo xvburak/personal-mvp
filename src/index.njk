@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Vasil Burak's Website
+---
+<h1>Let's find the soft in software.</h1>
+
+<div class="intro">
+<p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring new
+    topics — currently in architecture, chrononoanarchy, and community building.<p>
+
+<p>This website is where I share my explorations, thoughts or tutorials.</p>
+
+{# <p> You can reach out to me via email or follow me on are.na here.</p> #}
+
+</div>
+
+        <h2> Last entries </h2>
+        <div class="list">
+        {% for post in collections.post | reverse %}
+            <div class="post">
+                <a href="{{post.url}}"><span class="date">{{ post.data.date | postDate }}</span> {{ post.data.title }}</a>
+                <div class="post-tags"> 
+                    {% for tag in post.data.categories %}
+                        <a class="tag" href="categories/{{tag}}">{{tag}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+        <h2> last runs </h2>
+            <div id="activities-container" class="list">
+            </div>
+
+
+{% block scripts %}
+<script src="assets/strava.js"></script>
+{% endblock %}
