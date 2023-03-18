@@ -5,16 +5,58 @@ title: Vasil Burak's Website
 <h1>Let's find the soft in software.</h1>
 
 <div class="intro">
-<p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring new
-    topics — currently in architecture, chrononoanarchy, and community building.<p>
+    <p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring
+        new things — currently it's architecture, chrononoanarchy, and community building.<p>
 
-<p>This website is where I share my explorations, thoughts or tutorials.</p>
+    {# <p>This website is where I share my explorations, thoughts or tutorials.</p> #}
+    <p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank" href="https://www.are.na/xvburak">are.na</a></p>
+</div>
 
-{# <p> You can reach out to me via email or follow me on are.na here.</p> #}
+<div class="posts-section">
+    <h2> Writing</h2>
+    <div class="posts-list"> 
+        {% for post in collections.post | reverse %}
+            <a href="{{post.url}}" class="post"> 
+                <p class="title"> {{post.data.title}}  </p>
+                <div class="tags">
+                    {% for tag in post.data.categories %}
+                        <p class="tag">{{tag}}</p>
+                    {% endfor %}
+                </div>
+            </a>
+        {% endfor %}
+        
+
+    </div>
 
 </div>
 
-        <h2> Last entries </h2>
+<div class="posts-section">
+    <h2> Reading</h2>
+
+</div>
+
+{# <div class="posts-section">
+    <h2> Watching </h2>
+
+</div>
+
+<div class="posts-section">
+    <h2> Listening </h2>
+
+</div>
+
+<div class="posts-section">
+    <h2> Running </h2>
+
+</div>
+ #}
+
+
+
+
+
+{# <h2> Last entries </h2>
         <div class="list">
         {% for post in collections.post | reverse %}
             <div class="post">
@@ -35,4 +77,4 @@ title: Vasil Burak's Website
 
 {% block scripts %}
 <script src="assets/strava.js"></script>
-{% endblock %}
+{% endblock %} #}

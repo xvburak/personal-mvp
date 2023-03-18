@@ -14,12 +14,13 @@ module.exports = eleventyConfig => {
 	}
 
     eleventyConfig.addPassthroughCopy("src/assets");
-    eleventyConfig.addPassthroughCopy("src/assets/style.css");
+    eleventyConfig.addPassthroughCopy("src/assets/post.css");
+	eleventyConfig.addPassthroughCopy("src/assets/homepage.css");
     eleventyConfig.addPassthroughCopy("src/assets/strava.js");
 
-
-    eleventyConfig.addWatchTarget("src/assets/style.css");
-    eleventyConfig.addWatchTarget("src/assets/strava.js");
+    eleventyConfig.addWatchTarget("src/assets/post.css");
+	eleventyConfig.addWatchTarget("src/assets/homepage.css");
+	eleventyConfig.addWatchTarget("src/assets/strava.js");
     eleventyConfig.addWatchTarget("src/assets");
 
 
@@ -38,10 +39,7 @@ module.exports = eleventyConfig => {
     });
 
 	eleventyConfig.addFilter("filterByCategory", function(posts, cat) {
-		/*
-		case matters, so let's lowercase the desired category, cat
-		and we will lowercase our posts categories
-		*/
+
 		cat = cat.toLowerCase();
 		let result = posts.filter(p => {
 			let cats = p.data.categories.map(s => s.toLowerCase());
