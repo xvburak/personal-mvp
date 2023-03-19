@@ -7,10 +7,15 @@ stars: 2
 tags: book
 ---
 
-If I had count on my fingers - how many times I've started a blog, programmed and published it, and then without posting anything, thrown it away - one hand wouldn't be enough.
+For people who read novels often, the name Sally Roony needs no introduction. I'm just starting out with this type of book, so I couldn't help but choose an author who is peeking out at me from all sides. 
 
-This time, however, I'm trying a slightly different approach. I don't put great expectations on myself and I see the blog as a work in progress. I'll just write - whether it's just short notes, longer explorations, or some useful tutorials – and what (if anything) will come out of it, time will tell.
+I've always considered myself a slow reader, but I devoured this book in less than a week. 
 
-And I think that for it to work in the long run, it should serve me first and foremost. In short, accept that no one is ever likely to read it and yet it makes sense to write something.
+The interesting thing about it is that there's actually nothing interesting about it. The book tells the story of 4 people who live their lives together, which occasionally intertwine.
 
-I started keeping a journal after being on such a retreat away from people and for the first time I managed to keep it up for several days in a row, so I would like to continue. So far I've been sharing it on are.na, but it'll be nicer to read it here.
+I liked the way the story was told - the descriptive chapter was always followed by a chapter where the two main characters have an email exchange and describe feelings and deeper meanings related to events that happened in the previous chapter. Through these e-mails, more human-like and alive thoughts and probably even some of the worldview of the author herself come to light. 
+
+I would recommend the book to anyone who wants to start reading novels and is looking for something easy to get started. 
+
+
+
