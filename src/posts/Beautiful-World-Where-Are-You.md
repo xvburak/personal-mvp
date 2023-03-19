@@ -3,7 +3,7 @@ title: Beautiful World, Where Are You
 author: Sally Rooney
 layout: layouts/book.njk
 date: 2023-03-18
-stars: 2
+stars: 4
 tags: book
 ---
 
