@@ -51,8 +51,6 @@ body {
 }
 
 
-
-
 main {
     padding: 0rem 1rem 6rem;
     max-width: 700px;
@@ -69,14 +67,14 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    color: var(--secondary);
-    margin: 1rem 0;
-    font-size: .75rem;
-    font-weight: 600;
-    display: block;
-    text-transform: uppercase;
+p, h2, h3 {
+    margin-bottom: 1rem;
 }
+
+h2, h3 {
+    margin-top: 2rem;
+}
+
 
 a {
     color: inherit;
@@ -87,60 +85,6 @@ a:hover {
     color: var(--accent);
 }
 
-.posts-section {
-    margin-bottom: 2rem;
-}
-
-.post {
-    display: flex;
-    text-decoration: none;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--trinaryBackground);
-}
-
-.post:hover {
-    color: inherit;
-}   
-
-.post:first-child {
-    padding: 0 0 0.5rem;
-
-}
-
-.post:last-child {
-    padding: 0.5rem 0 0.5rem;
-
-}
-
-.intro p {
-    margin-bottom: 1rem;
-}
-
-p.title {
-    flex: 1;
-}
-
-p.tag {
-    color: var(--secondary);
-    display: block;
-    margin-left: 0.25rem;
-}
-
-p.tag::after {
-    content: ",";
-}
-
-p.tag:last-child:after {
-    content: "";
-}
-
-.tags {
-    display: flex;
-}
-
-.intro {
-    margin-bottom: 2rem
-}
 
 
 @media (max-width: 1280px){

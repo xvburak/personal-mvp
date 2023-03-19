@@ -1,0 +1,380 @@
+:root {
+    --font-size-body: 17px;
+    --font-size-mono: 15px;
+  
+    --color-background: #fff;
+    --color-offset: #eee;
+    --color-faded: #ccc;
+    --color-gray: #767676;
+    --color-text: #3d3d3d;
+    --color-text-extreme: #000;
+    --color-accent: #ff6600;
+  
+    --font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  
+    --radius: 0.25rem;
+  
+    --width: 700px;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: #141414;
+      --color-offset: #2a2a2a;
+      --color-faded: #555;
+      --color-gray: #767676;
+      --color-text: #e5e5e5;
+      --color-text-extreme: #fff;
+    }
+  }
+  
+  /* Reset -------------------------------------------------------------------- */
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  html {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    background: var(--color-background);
+    color: var(--color-text);
+  }
+  
+  body {
+    max-width: var(--width);
+    margin: 0 auto;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1,"kern","kern";
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+  }
+
+  main {
+    padding: 0 1rem;
+    margin: 3.5rem 0;
+  }
+  
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    border: 0;
+    line-height: 1;
+    background: none;
+    color: var(--color-text);
+  }
+  
+  input,
+  textarea,
+  select {
+    display: block;
+    width: 100%;
+  }
+  
+  button {
+    cursor: pointer;
+    background: var(--color-faded);
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* Typography --------------------------------------------------------------- */
+
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    color: var(--color-text-extreme);
+    font-weight: 500;
+  }
+  
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 3rem 0 1rem;
+  }
+  
+  h2 + h3 {
+    margin-top: 0;
+  }
+
+  h2.title {
+    margin: 1rem 0rem 0rem;
+  }
+  
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-gray);
+  }
+  
+  h4 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+  }
+  
+  p,
+  ol,
+  ul,
+  pre,
+  blockquote {
+    margin: 1rem 0;
+  }
+  
+  a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--color-faded);
+    text-underline-offset: 1px;
+    color: inherit;
+    transition: 100ms text-decoration-color ease-in-out;
+  }
+  
+  a:hover {
+    text-decoration-color: var(--color-gray);
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-left: 2rem;
+  }
+  
+  ul li:before,
+  ol ul li:before {
+    position: absolute;
+    margin-left: -2rem;
+    content: "—";
+    color: var(--color-faded);
+    font-weight: 500;
+    margin-right: 0.5rem;
+  }
+  
+  ol {
+    list-style-type: none;
+    margin-left: 2rem;
+    counter-reset: list;
+  }
+  
+  ol li:before {
+    position: absolute;
+    margin-left: -2rem;
+    color: var(--color-faded);
+    font-weight: 500;
+    margin-right: 0.5rem;
+    content: counter(list) ".";
+    counter-increment: list;
+  }
+  
+  img {
+    border-radius: var(--radius);
+  }
+  
+  b,
+  strong {
+    font-weight: 500;
+  }
+  
+  aside,
+  aside p {
+    font-size: 0.8rem;
+    color: var(--color-gray);
+  }
+  
+  aside p:first-of-type {
+    margin-top: 0;
+  }
+
+  aside p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  aside a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--color-faded);
+    text-underline-offset: 0px;
+  }
+  
+  aside code {
+    background: none;
+    padding: 0;
+    font-size: calc(var(--font-size-mono) * 0.9);
+  }
+  
+  pre,
+  code {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-mono);
+  }
+  
+  pre {
+    border: 1px solid var(--color-offset);
+    overflow: auto;
+    padding: 1rem;
+    border-radius: var(--radius);
+    tab-size: 1rem;
+  }
+  
+  code {
+    padding: 2px 4px;
+    border-radius: var(--radius);
+    background: var(--color-offset);
+  }
+  
+  pre code {
+    background: none;
+    padding: 0;
+  }
+  
+  time {
+    color: var(--color-gray);
+  }
+  
+  blockquote {
+    border-left: 2px solid var(--color-offset);
+    padding-left: 1rem;
+    font-style: italic;
+  }
+
+ .logo {
+    text-decoration: none;
+  }
+
+  /* Feed --------------------------------------------------------------------- */
+
+.posts {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .posts li:before {
+    content: "";
+  }
+  
+  .posts a {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    transition: background 200ms ease-in-out;
+  }
+  
+  .posts a:hover {
+    background: var(--color-offset);
+    transition: none;
+  }
+  
+  .tags {
+    text-align: right;
+  }
+
+    /* Writing --------------------------------------------------------------------- */
+
+  .info {
+    display: flex;
+    color: var(--color-gray);
+  }
+
+  .info .tags {
+    text-align: inherit;
+    margin-left: 0.5rem;
+    
+  }
+
+
+    /* Reading --------------------------------------------------------------------- */
+
+      dl {
+        padding: 1rem 0;
+        border-top: 1px solid var(--color-offset);
+        border-bottom: 1px solid var(--color-offset);
+        margin-top: 1rem;
+      }
+      
+      .key-value-pair {
+        display: flex;
+        margin-bottom: 1rem;
+      }
+      
+      .key-value-pair:last-of-type {
+        margin-bottom: 0;
+      }
+      
+      .key-value-pair dt {
+        width: 5rem;
+        color: var(--color-gray);
+      }
+      
+      .invisible-spacer {
+        height: 2rem;
+      }
+      
+      .key-value-pair dd {
+        flex: 1;
+      }
+      
+    
+
+
+  .back {
+    text-decoration: none;
+    margin-right: 0.25rem;
+  }
+
+
+  @media (max-width: 768px){
+    html {
+        font-size: 15px;
+    }
+  }
