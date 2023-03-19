@@ -3,7 +3,7 @@ title: And in the Vienna Woods the Trees Remain
 author: Elisabeth Katherine Åsbrink
 layout: layouts/book.njk
 date: 2023-01-18
-stars: 3
+stars: 2
 tags: book
 ---
 
