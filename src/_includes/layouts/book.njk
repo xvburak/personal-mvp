@@ -18,16 +18,16 @@
         <h2 class="title"> {{ title }} </h2>
         <dl class="book-info">
             <div class="key-value-pair">
+                <dt>Author</dt>
+                <dd>{{ author }}</dd>
+            </div>
+            <div class="key-value-pair">
                 <dt>Rating</dt>
                 <dd> {% for i in range(stars) %}
                     ★
                 {% endfor %}</dd>
             </div>
 
-            <div class="key-value-pair">
-                <dt>Author</dt>
-                <dd>{{ author }}</dd>
-            </div>
         </dl>
 
         {{ content | safe }}
