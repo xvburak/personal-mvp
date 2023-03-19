@@ -11,12 +11,8 @@
             "id": "0dc6f91842635add",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "roadmap.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "roadmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "roadmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "roadmap.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,6 +140,8 @@
   },
   "active": "0dc6f91842635add",
   "lastOpenFiles": [
+    "roadmap.md",
+    "the-roadmap.md",
     "just-another-personal-website.md",
     "And-in-the-Vienna-Woods-the-Trees Remain.md",
     "beautiful-world-where-are-you.md"
