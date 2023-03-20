@@ -11,11 +11,28 @@
             "id": "0dc6f91842635add",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "the-roadmap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e8fce4b419a60945",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "how-to-build-a-blog-with-eleventy.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "how-to-build-a-blog-with-eleventy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "how-to-build-a-blog-with-eleventy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "how-to-build-a-blog-with-eleventy.md"
+              }
             }
           }
         ]
@@ -138,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dc6f91842635add",
+  "active": "e8fce4b419a60945",
   "lastOpenFiles": [
-    "roadmap.md",
     "the-roadmap.md",
+    "how-to-build-a-blog-with-eleventy.md",
+    "roadmap.md",
     "just-another-personal-website.md",
     "And-in-the-Vienna-Woods-the-Trees Remain.md",
     "beautiful-world-where-are-you.md"
