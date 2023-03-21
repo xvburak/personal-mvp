@@ -258,9 +258,8 @@
   }
   
   pre {
-    border: 1px solid var(--color-offset);
     overflow: auto;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: var(--radius);
     tab-size: 1rem;
   }

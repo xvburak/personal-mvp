@@ -4,6 +4,7 @@ layout: layouts/post.njk
 date: 2023-03-18
 categories: ["note"]
 tags: post
+published: true
 ---
 
 If I had to count on my fingers how many times I've started a blog, programmed and published it, and then without posting anything, thrown it away - one hand wouldn't be enough.

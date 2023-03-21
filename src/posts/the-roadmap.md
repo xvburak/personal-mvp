@@ -4,6 +4,7 @@ layout: layouts/post.njk
 date: 2023-03-17
 categories: ["operations"]
 tags: post
+published: true
 ---
 
 As you can see, there is not much here yet. I wanted to publish the page in the first place and let it grow and shape it over time. In this post, I would like to describe what my plans with this site are.

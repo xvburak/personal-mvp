@@ -5,6 +5,7 @@ layout: layouts/book.njk
 date: 2023-03-18
 stars: 4
 tags: book
+published: true
 ---
 
 For people who read novels often, the name Sally Roony needs no introduction. I'm just starting out with this type of book, so I couldn't help but choose an author who is peeking out at me from all sides. 
