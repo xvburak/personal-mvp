@@ -8,7 +8,7 @@ rewatched: true
 tags: movie
 published: true
 ---
-I had seen Eternal Sunshine of the Spotless Mind a long time ago and recently rewatched it, and it still hits hard. I still love every second of it. I think Charlie Kaufman's script plays a big role in that - it's always so thought-provoking and unique.
+I've seen Eternal Sunshine of the Spotless Mind a long time ago and recently rewatched it, and it still hits hard. I still love every second of it. I think Charlie Kaufman's script plays a big role in that - it's always so thought-provoking and unique.
 
 The plot about erasing memories of a past relationship really hit home for me. I could relate to the main character, Joel, and his feelings of abandonment and nostalgia. The idea of being able to erase someone from your mind, but not being able to get them out of your heart, really resonated with me.
 
