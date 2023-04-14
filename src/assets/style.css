@@ -138,7 +138,7 @@
   h4,
   h5,
   h6 {
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 0rem;
   }
   
   h2 + h3 {
@@ -294,6 +294,14 @@
 .posts {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
+  }
+
+ .posts {
+  margin-top: 0.25rem;
+ }
+
+  .post h2 {
+    margin-bottom: 0rem;
   }
   
   .posts li:before {

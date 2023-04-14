@@ -3,42 +3,58 @@ layout: layouts/base.njk
 title: Vasil Burak
 ---
 
-<p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring always something new — currently architecture, chrono-anarchy and communal life.<p>
+<p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring always
+  something new — currently architecture, chrono-anarchy and communal life.<p>
+    <p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank"
+        href="https://www.are.na/xvburak">are.na</a></p>
 
-<p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank" href="https://www.are.na/xvburak">are.na</a></p>
+    <h2>Writing</h2>
 
-  <h2>Writing</h2>
-
-  <ul class="posts">
+    <ul class="posts">
       {% for post in collections.post | reverse %}
-        {% if post.data.published %}
-          <li>
-            <a href="{{post.url}}">
-              {{post.data.title}}
-              <div class="tags">
-                  {% for tag in post.data.categories %}
-                      {{tag}}
-                  {% endfor %}
-              </div>
-            </a>
-          </li>
-          {% endif %}
-        {% endfor %}
+      {% if post.data.published %}
+      <li>
+        <a href="{{post.url}}">
+          {{post.data.title}}
+          <div class="tags">
+            {% for tag in post.data.categories %}
+            {{tag}}
+            {% endfor %}
+          </div>
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
     </ul>
 
     <h2>Reading</h2>
 
-  <ul class="posts">
+    <ul class="posts">
       {% for post in collections.book | reverse %}
-        <li>
-          <a href="{{post.url}}">
-            {{post.data.title}}
-            <div class="tags">
-                {% for i in range(post.data.stars) %}
-                    ★
-                {% endfor %}
-            </div>
-          </a>
-        </li>
-        {% endfor %}
+      <li>
+        <a href="{{post.url}}">
+          {{post.data.title}}
+          <div class="tags">
+            {% for i in range(post.data.stars) %}
+            ★
+            {% endfor %}
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2>Running</h2>
+
+    <ul class="posts">
+      {% for post in collections.run | reverse %}
+      <li>
+        <a href="{{post.url}}">
+          {{post.data.title}}
+          <div class="tags">
+            {{ post.data.distance }} | {{ post.data.pace }} 
+          </div>
+        </a>
+      </li>
+      {% endfor %}
     </ul>
