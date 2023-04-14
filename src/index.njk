@@ -6,7 +6,7 @@ title: Vasil Burak
 <p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring always
   something new — currently architecture, chrono-anarchy and communal life.<p>
     <p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank"
-        href="https://www.are.na/xvburak">are.na</a></p>
+        href="https://www.are.na/xvburak">are.na</a>.</p>
 
     <h2>Writing</h2>
 
@@ -32,19 +32,57 @@ title: Vasil Burak
     <ul class="posts">
       {% for post in collections.book | reverse %}
       <li>
+        {% if post.content %}
         <a href="{{post.url}}">
           {{post.data.title}}
           <div class="tags">
-            {% for i in range(post.data.stars) %}
-            ★
-            {% endfor %}
+            📝 &nbsp {% for i in range(post.data.stars) %}★{% endfor %}
+            {% for i in range(5-post.data.stars) %}☆{% endfor %}
           </div>
         </a>
+        {% else %}
+        <a href="{{post.url}}">
+          {{post.data.title}}
+          <div class="tags">
+            {% for i in range(post.data.stars) %}★{% endfor %}
+            {% for i in range(5-post.data.stars) %}☆{% endfor %}
+          </div>
+        </a>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
 
-    <h2>Running</h2>
+    <h2>Watching</h2>
+
+    <ul class="posts">
+      {% for post in collections.movie | reverse %}
+      <li>
+        {% if post.content %}
+        <a href="{{post.url}}">
+          {{post.data.title}}
+          <div class="tags">
+            {% if post.data.rewatched %} 🔁 {% endif %} 📝 &nbsp
+            {% for i in range(post.data.stars) %}★{% endfor %}{% for i in range(5-post.data.stars) %}☆{% endfor %}
+
+
+          </div>
+        </a>
+        {% else %}
+        <a href="{{post.url}}">
+          {{post.data.title}}
+          <div class="tags">
+            {% if post.data.rewatched %} 🔁 {% endif %} &nbsp
+            {% for i in range(post.data.stars) %}★{% endfor %}{% for i in range(5-post.data.stars) %}☆{% endfor %}
+          </div>
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+      {# <li> <a href="/watching">show more... </a> </li> #}
+    </ul>
+
+    {# <h2>Running</h2>
 
     <ul class="posts">
       {% for post in collections.run | reverse %}
@@ -57,4 +95,4 @@ title: Vasil Burak
         </a>
       </li>
       {% endfor %}
-    </ul>
+    </ul> #}

@@ -34,8 +34,13 @@ module.exports = eleventyConfig => {
 		return Array.from(categories);
 	});
 
+	eleventyConfig.addFilter("limit", function(collection, num) {
+		return collection.slice(0, num);
+	});
+
+
     eleventyConfig.addFilter("postDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toFormat('yy-MM-dd');
+        return DateTime.fromJSDate(dateObj).toFormat('MMM dd, yyyy');
     });
 
 	eleventyConfig.addFilter("filterByCategory", function(posts, cat) {

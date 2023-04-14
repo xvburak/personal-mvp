@@ -140,6 +140,8 @@
   h6 {
     margin: 2rem 0 0rem;
   }
+
+ 
   
   h2 + h3 {
     margin-top: 0;
@@ -147,6 +149,13 @@
 
   h2.title {
     margin: 1rem 0rem 0rem;
+  }
+
+  h2 span {
+    color: var(--color-gray);
+    display: block;
+    font-weight: 400;
+    font-style: italic;
   }
   
   h3,
@@ -183,6 +192,8 @@
   a:hover {
     text-decoration-color: var(--color-gray);
   }
+
+
   
   ul {
     list-style-type: none;
@@ -321,6 +332,7 @@
     background: var(--color-offset);
     transition: none;
   }
+
   
   .tags {
     text-align: right;
@@ -331,6 +343,9 @@
   .info {
     display: flex;
     color: var(--color-gray);
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-offset);
+    padding-bottom: 1rem;
   }
 
   .info .tags {

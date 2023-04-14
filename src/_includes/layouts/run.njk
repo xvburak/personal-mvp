@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: layouts/base.njk
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖤</text></svg>">
-    <title>Vasil Burak | {{ title }}</title>
-    <meta name="description" content="Vasil Burak's Personal Website">
-</head>
-
-<body>
-
-    <main>
-        {% include "components/header.njk" %}
-        {# <h2 class="title"> {{ title }} </h2>
+{# <h2 class="title"> {{ title }} </h2>
         <dl class="book-info">
             <div class="key-value-pair">
                 <dt>Author</dt>
@@ -30,12 +17,4 @@
 
         </dl> #}
 
-        {{ content | safe }}
-
-    </main>
-<!-- 100% privacy friendly analytics -->
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
-
-</html>
+{{ content | safe }}

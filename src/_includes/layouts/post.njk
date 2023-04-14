@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vasil Burak's Personal Website">
-
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖤</text></svg>">
-    <title>Vasil Burak | {{ title }}</title>
-
-    {# styling for blocks of code #}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/felipec.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-</head>
-<body>
-    
-    <main>
-        {% include "components/header.njk" %}
-        <h2 class="title"> {{ title }} </h2>
-        <div class="info">
-            {{ date | postDate }},
-            <div class="tags">
-                {% for tag in categories %}
-                    {{ tag }}
-                {% endfor %}
-            </div>
-        </div>
-        {{ content | safe }}
-    </main>
-
-    <!-- 100% privacy friendly analytics -->
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
-</html>
+---
+layout: layouts/base.njk
+---
+<h2 class="title"> {{ title }} </h2>
+<div class="info">
+    {{ date | postDate }}
+    <div class="tags">
+        {% for tag in categories %}
+        {{ tag }}
+        {% endfor %}
+    </div>
+</div>
+{{ content | safe }}
