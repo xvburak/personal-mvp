@@ -9,7 +9,7 @@ published: false
 ## What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) installed
-- basic knowledge of HTML and CSS
+- basic knowledge of HTML, CSS and JS
 - [GitHub account](https://github.com/)
 - any text editor ([VS Code](https://code.visualstudio.com/), TextEdit, whatever)
 
@@ -19,12 +19,12 @@ Let's start with a clear description of our project. Although most developers ar
 
 - homepage with a list of posts
 - single post page
-- list of posts by tag
+- list of posts by category
 - styling
 
 ### Initial directories and files
 
-Your blog will exist in a folder on your computer, so the first step is to create the folder. You can name it whatever you want, I'll just call it `blog`.  And open it in a text editor (I use VS Code).
+Your blog will exist in a folder on your computer, so the first step is to create the folder. You can name it whatever you want, I'll just call it `my-new-blog`.  And open it in a text editor (I use VS Code).
 
 Now open a terminal. In VS Code this is done by clicking on the **Terminal** > **New Terminal** in the Mac menu bar.
 
@@ -42,19 +42,18 @@ npm install --save-dev @11ty/eleventy
 
 After that, the content of the folder should look like this:
 ```bash
-blog/
-├─ node_modules/
+📂 blog
+├─ 📁 node_modules 
+├─ 📁 src
 ├─ package.json
 ├─ package-lock.json
 ```
 
 ### Basic structure
 
-In the root (`blog`) folder, we create the `src` folder, and here will exist the content of our website. 
-Next, we create (still in the root folder) `.eleventy.js` file to which we add the following code:
+In the root (`my-new-blog`) folder, we create the `src` folder, and here will exist the source of our website. Next, we create (still in the root folder) `.eleventy.js` file to which we add the following:
 
 ```js
-
 module.exports = eleventyConfig => {
 
  return {
@@ -66,12 +65,12 @@ module.exports = eleventyConfig => {
 };
 ```
 
-This tells the eleventy where to get the data from. And your folder structure shoud now look like this:
+This tells eleventy where to get the data from. Your folder structure shoud now look like this:
 
 ```bash
-blog/
-├─ node_modules/ 
-├─ src/
+📂 blog
+├─ 📁 node_modules 
+├─ 📁 src
 ├─ .elevetny.js
 ├─ package.json
 ├─ package-lock.json
