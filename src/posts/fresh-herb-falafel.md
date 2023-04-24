@@ -6,6 +6,7 @@ categories: ["recipe"]
 tags: post
 published: true
 ---
+![Sonny and Mariel high fiving.](./assets/images/fresh-herb-falafel.webp)
 
 ## Ingredients:
 (8 servings)
