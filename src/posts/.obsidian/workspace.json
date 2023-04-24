@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "32c36d6c396821a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fresh-herb-falafel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "how-to-build-a-blog-with-eleventy.md",
+                "file": "fresh-herb-falafel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "how-to-build-a-blog-with-eleventy.md",
+                "file": "fresh-herb-falafel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "how-to-build-a-blog-with-eleventy.md"
+                "file": "fresh-herb-falafel.md"
               }
             }
           }
@@ -159,12 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd0f4c0fab7f56e0",
+  "active": "32c36d6c396821a2",
   "lastOpenFiles": [
+    "how-to-build-a-blog-with-eleventy.md",
+    "fresh-herb-falafel.md",
     "just-another-personal-website.md",
     "one-month-alone.md",
     "the-roadmap.md",
-    "how-to-build-a-blog-with-eleventy.md",
     "roadmap.md",
     "And-in-the-Vienna-Woods-the-Trees Remain.md",
     "beautiful-world-where-are-you.md"
