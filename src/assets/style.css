@@ -82,8 +82,13 @@
   video,
   canvas,
   svg {
+    aspect-ratio: 2/1;
+    -webkit-aspect-ratio: 2/1; /* for Safari and older versions of Edge */
     display: block;
     max-width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover; /* for older versions of Opera */
+    object-position: center; /* for older versions of Safari */
   }
   
   input,

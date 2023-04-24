@@ -22,6 +22,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addWatchTarget("src/assets/homepage.css");
 	eleventyConfig.addWatchTarget("src/assets/strava.js");
     eleventyConfig.addWatchTarget("src/assets");
+	eleventyConfig.addWatchTarget("src/assets/images");
 
 
 	eleventyConfig.addCollection("categories", function(collectionApi) {
