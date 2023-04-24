@@ -57,4 +57,4 @@ published: true
 - For a healthier option, you can bake the falafel balls in a preheated oven at 400°F for 20-25 minutes, flipping them halfway through.
 
 
-heavily based on this [recipe](https://www.bonappetit.com/recipe/fresh-herb-falafel) by Sarit Packer & Itamar Srulovich
+heavily based on [this recipe](https://www.bonappetit.com/recipe/fresh-herb-falafel) by Sarit Packer & Itamar Srulovich
