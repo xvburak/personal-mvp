@@ -1,5 +1,5 @@
 ---
-title: Fresh Herb Falfel
+title: Fresh Herb Falafel
 layout: layouts/post.njk
 date: 2023-04-24
 categories: ["recipe"]
