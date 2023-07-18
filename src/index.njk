@@ -4,7 +4,8 @@ title: Vasil Burak
 ---
 
 <p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring always
-  something new — currently architecture, chrono-anarchy and communal life.<p>
+    something new — currently architecture, chrono-anarchy and communal life. </p>
+    
     <p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank"
         href="https://www.are.na/xvburak">are.na</a>.</p>
 
@@ -36,16 +37,14 @@ title: Vasil Burak
         <a href="{{post.url}}">
           {{post.data.title}}
           <div class="tags">
-            📝 &nbsp {% for i in range(post.data.stars) %}★{% endfor %}
-            {% for i in range(5-post.data.stars) %}☆{% endfor %}
+            {{post.data.author}}
           </div>
         </a>
         {% else %}
-        <a href="{{post.url}}">
+        <a class="disabled" role="link" aria-disabled="true">
           {{post.data.title}}
           <div class="tags">
-            {% for i in range(post.data.stars) %}★{% endfor %}
-            {% for i in range(5-post.data.stars) %}☆{% endfor %}
+            {{post.data.author}}
           </div>
         </a>
         {% endif %}
@@ -62,18 +61,14 @@ title: Vasil Burak
         <a href="{{post.url}}">
           {{post.data.title}}
           <div class="tags">
-            {% if post.data.rewatched %} 🔁 {% endif %} 📝 &nbsp
-            {% for i in range(post.data.stars) %}★{% endfor %}{% for i in range(5-post.data.stars) %}☆{% endfor %}
-
-
+            {{post.data.author}}
           </div>
         </a>
         {% else %}
-        <a href="{{post.url}}">
+        <a class="disabled" role="link" aria-disabled="true">
           {{post.data.title}}
           <div class="tags">
-            {% if post.data.rewatched %} 🔁 {% endif %} &nbsp
-            {% for i in range(post.data.stars) %}★{% endfor %}{% for i in range(5-post.data.stars) %}☆{% endfor %}
+            {{post.data.author}}
           </div>
         </a>
         {% endif %}

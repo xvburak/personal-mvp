@@ -332,6 +332,8 @@
     border-radius: var(--radius);
     transition: background 200ms ease-in-out;
   }
+
+
   
   .posts a:hover {
     background: var(--color-offset);
@@ -340,7 +342,15 @@
 
   
   .tags {
+    flex-grow: 1;
     text-align: right;
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column; */
+  }
+
+  .disabled {
+    opacity: 50%;
   }
 
     /* Writing --------------------------------------------------------------------- */
@@ -403,6 +413,17 @@
   @media (max-width: 700px){
     html {
         font-size: 15px;
+    }
+
+    main {
+        padding: 1rem 1rem 4rem;
+        margin: 0 0 3.5rem 0;
+      }
+  }
+
+  @media (max-width: 500px){
+    html {
+        font-size: 13px;
     }
 
     main {

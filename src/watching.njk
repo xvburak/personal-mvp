@@ -21,7 +21,7 @@ pagination:
           {{post.data.title}}
           {% if post.data.rewatched %} 🔁 {% endif %}
           <div class="tags">
-            {% for i in range(post.data.stars) %}★{% endfor %}
+            {{post.data.author}}
           </div>
         </a>
       </li>

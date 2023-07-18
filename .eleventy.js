@@ -41,7 +41,7 @@ module.exports = eleventyConfig => {
 
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toFormat('MMM dd, yyyy');
+        return DateTime.fromJSDate(dateObj).toFormat('MMM dd, yy');
     });
 
 	eleventyConfig.addFilter("filterByCategory", function(posts, cat) {
