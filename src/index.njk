@@ -1,93 +1,29 @@
 ---
 layout: layouts/base.njk
-title: Vasil Burak
+title: Vasil Burak's website
 ---
+<p>Hi, welcome to my digital garden, where I sow ideas, thoughts, and playful notions, nurturing a landscape where knowledge and creativity can intertwine and flourish.</p>
 
-<p> Hi, I'm Vasil (or xvburak), a self-taught developer, designer, and researcher. I'm passionate about exploring always
-    something new — currently architecture, chrono-anarchy and communal life. </p>
-    
-    <p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank"
-        href="https://www.are.na/xvburak">are.na</a>.</p>
+<p>For updates subscribe to my <a href="/newsletter">newsletter</a>.</p>
 
-    <h2>Writing</h2>
+<p>Take care, have fun.</p>
 
-    <ul class="posts">
-      {% for post in collections.post | reverse %}
-      {% if post.data.published %}
-      <li>
-        <a href="{{post.url}}">
-          {{post.data.title}}
-          <div class="tags">
-            {% for tag in post.data.categories %}
-            {{tag}}
-            {% endfor %}
-          </div>
-        </a>
+
+{# 
+<p> You can reach out to me via <a href="mailto:burak.vasil@gmail.com">e-mail</a> or meet me on <a target="_blank"
+    href="https://www.are.na/xvburak">are.na</a>.</p> #}
+
+
+{# <ul class="posts">
+  {% set count = 0 %}
+  {% for post in collections.post | reverse %}
+    {% if post.data.published and count < 3 %}
+      <li class="row">
+        <a href="{{post.url}}">{{post.data.title}}
+          </a>
       </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-
-    <h2>Reading</h2>
-
-    <ul class="posts">
-      {% for post in collections.book | reverse %}
-      <li>
-        {% if post.content %}
-        <a href="{{post.url}}">
-          {{post.data.title}}
-          <div class="tags">
-            {{post.data.author}}
-          </div>
-        </a>
-        {% else %}
-        <a class="disabled" role="link" aria-disabled="true">
-          {{post.data.title}}
-          <div class="tags">
-            {{post.data.author}}
-          </div>
-        </a>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-
-    <h2>Watching</h2>
-
-    <ul class="posts">
-      {% for post in collections.movie | reverse %}
-      <li>
-        {% if post.content %}
-        <a href="{{post.url}}">
-          {{post.data.title}}
-          <div class="tags">
-            {{post.data.author}}
-          </div>
-        </a>
-        {% else %}
-        <a class="disabled" role="link" aria-disabled="true">
-          {{post.data.title}}
-          <div class="tags">
-            {{post.data.author}}
-          </div>
-        </a>
-        {% endif %}
-      </li>
-      {% endfor %}
-      {# <li> <a href="/watching">show more... </a> </li> #}
-    </ul>
-
-    {# <h2>Running</h2>
-
-    <ul class="posts">
-      {% for post in collections.run | reverse %}
-      <li>
-        <a href="{{post.url}}">
-          {{post.data.title}}
-          <div class="tags">
-            {{ post.data.distance }} | {{ post.data.pace }} 
-          </div>
-        </a>
-      </li>
-      {% endfor %}
-    </ul> #}
+      
+      {% set count = count + 1 %}
+    {% endif %}
+  {% endfor %}
+</ul> #}

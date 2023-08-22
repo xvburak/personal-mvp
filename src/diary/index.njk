@@ -1,0 +1,21 @@
+---
+title: Public Diary
+layout: layouts/base.njk
+pagination:
+    data: collections.entry
+    size: 50
+    alias: posts
+    reverse: true
+---
+
+
+<ul class="posts">
+    {% for post in posts %}
+    <li>
+        <a href="{{post.url}}">
+            {{post.data.title | postDate }}
+        </a>
+        
+    </li>
+    {% endfor %}
+</ul>

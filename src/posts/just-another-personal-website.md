@@ -2,7 +2,7 @@
 title: Just Another Personal Website
 layout: layouts/post.njk
 date: 2023-03-18
-categories: ["note"]
+categories: ["note","idk"]
 tags: post
 published: true
 ---
